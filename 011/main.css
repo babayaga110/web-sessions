@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-image: url("./images/Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heading-2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem;
+  color: #fd5377;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  text-align: center;
+  padding: 1rem 2.5rem;
+  background-color: #fd5377;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  color: #fff;
+}
+.container h4 {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.dice-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 200px;
+  gap: 1.25rem;
+}
+.dice-container .item h6 {
+  font-size: 1.25rem;
+  margin: 0.75rem 0;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  background-color: #fca0ab;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dice-active {
+  border: 2px solid #fff;
+}
+
+.dice p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fd5377;
+  margin: 0;
+}
+
+.button {
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  background-color: #fca0ab;
+  color: #fd5377;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+}
+
+.button:hover{
+    background-color: #000;
+    color: #fff;
+}
+#newGame{
+    display: none;
+}

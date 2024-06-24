@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section Css */
+.header {
+  background-image: url("./img/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+/* Navigation Part */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+  max-width: 200px;
+}
+/* navbar container */
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Navbar a tag */
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Navbar contact button */
+.contact-button {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.contact-button a {
+  color: #2f333a;
+}
+
+/* header Title */
+
+.header-title {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Arrow img */
+
+.arrow-down {
+  display: block;
+  margin: 30px auto 0;
+}
+
+/* Flex container */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 480px);
+}
+
+.grid-container .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  overflow: hidden;
+  border: 1px solid;
+}
+
+.grid-container .items img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+
+.grid-container .item-5 {
+  background-image: url("./img/desktop/image-graphic-design.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.grid-container .item-6 {
+  background-image: url("./img/desktop/image-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}

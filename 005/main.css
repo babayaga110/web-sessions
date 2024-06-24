@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 10px;
+  padding: 0;
+}
+
+.container {
+  border: 5px solid black;
+  height: 415px;
+  width: 415px;
+  /* Grid Layout */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows:  repeat(4, 1fr);
+  gap: 5px;
+}
+
+
+
+.item-1 {
+  background-color: aqua;
+  /* grid-column: 1 / 1; */
+  /* grid-row: 1 ; */
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.item-2{
+    background-color: blue;
+    /* grid-column: 2;
+    grid-row: 2; */
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.item-3{
+    background-color: green;
+    /* grid-column: 3;
+    grid-row: 3; */
+    grid-column: 1;
+    grid-row: 3;
+}
+.item-4{
+    background-color: yellow;
+    /* grid-column: 4;
+    grid-row: 4; */
+    grid-column: 2;
+    grid-row: 4;
+}
+
+
+
+/* width 400px */
+/* our columns div in 4 part each of 100px  */
+/* 10px gap  */
+
+
+/* 100px 10px 100px 10px 100px 10px 100px */ 430px
+/* 100px 10px 100px 10px 100px 10px 100px */ 430px
+
+/* 1 fr */
+

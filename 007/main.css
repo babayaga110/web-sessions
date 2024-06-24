@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.contact-button a {
+  font-family: "Fraunces", serif;
+}
+
+/* Header Section Css */
+.header {
+  background-image: url("./img/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+/* Navigation Part */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+  max-width: 200px;
+}
+/* navbar container */
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Navbar a tag */
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Navbar contact button */
+.contact-button {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.contact-button a {
+  color: #2f333a;
+}
+
+/* header Title */
+
+.header-title {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 100px;
+}
+/* 16px x 10 */
+/* Arrow img */
+
+.arrow-down {
+  display: block;
+  margin: 30px auto 0;
+}
+
+/* Flex container */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 480px);
+}
+
+.grid-container .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Image Tags inside grid items */
+.grid-container .items img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.grid-container .items h4 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 0.2rem;
+  color: #23303e;
+}
+.grid-container .items p {
+  font-size: 1rem;
+  color: #9695a0;
+}
+.grid-container .items a {
+  text-decoration: none;
+  color: #23303e;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  font-size: 1.2rem;
+  position: relative;
+}
+.grid-container .items a::after {
+  content: "";
+  position: absolute;
+  top: auto;
+  bottom: -2px;
+  left: -3px;
+  width: 6.5em;
+  height: 10px;
+  background-color: #fef1ba;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+.grid-container .items:nth-child(1),
+.grid-container .items:nth-child(4) {
+  padding: 0 5rem;
+  align-items: center;
+}
+
+.grid-container .items:nth-child(5) {
+  background-image: url("./img/desktop/image-graphic-design.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.grid-container .items:nth-child(6) {
+  background-image: url("./img/desktop/image-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/* Section 3 */
+
+.testimonial {
+  text-align: center;
+  margin: 5em 0;
+}
+
+.testimonial-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #9695a0;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5em 0;
+  gap: 20px;
+}
+.testimonial-container .testimonial-items {
+  max-width: 380px;
+}
+.testimonial-img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.testimonial-items p {
+  font-size: 1rem;
+  color: #9695a0;
+  margin: 2em 0;
+}
+.testimonial-items h5 {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #23303e;
+  margin: 0;
+}
+.testimonial-items h6 {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #9695a0;
+  margin: 0.75em 0;
+}
+/* Section 4 */
+
+.products-conainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 350px;
+}
+.products-conainer img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #90d4c5;
+  text-align: center;
+  padding: 2em 0;
+}
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-nav a {
+  text-decoration: none;
+  color: #4d9182;
+}
+.footer-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 3em;
+}

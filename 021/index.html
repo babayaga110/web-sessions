@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <dialog>
+        <div class="dialog-header">
+            <h6>RULES</h6>
+            <img src="assets/icon-close.svg" alt="close" class="close">
+        </div>
+
+        <img src="assets/image-rules.svg" alt="rules" class="rules">
+    </dialog>
+
+    <div class="container">
+        <div class="header">
+            <h1>
+                <span>ROCK</span>
+                <span>PAPER</span>
+                <span>SCISSORS</span>
+            </h1>
+            <div class="score">
+                <p>SCORE</p>
+                <h3 id="scoreDisplay">0</h3>
+            </div>
+        </div>
+        <div class="choices">
+            <img src="assets/bg-triangle.svg" alt="triangle" class="triangle">
+
+            <div class="choice" id="rock">
+                <div>
+                    <img src="assets/icon-rock.svg" alt="rock" id="demmoTest">
+                </div>
+            </div>
+            <div class="choice" id="scissors">
+                <div>
+                    <img src="assets/icon-scissors.svg" alt="scissors">
+                </div>
+            </div>
+            <div class="choice" id="paper">
+                <div>
+                    <img src="assets/icon-paper.svg" alt="paper">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="result">
+            <div class="player">
+                <h3>YOU PICKED</h3>
+                <div class="you-picked">
+                    <div>
+                        <img src="assets/icon-rock.svg" alt="rock" id="youPickedImg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-text">
+                <canvas id="canvas" width="200" height="150"></canvas>
+                <h2 id="message">YOU WIN</h2>
+                <button id="playAgain">PLAY AGAIN</button>
+            </div>
+
+            <div class="player">
+                <h3>THE HOUSE PICKED</h3>
+                <div class="house-picked">
+                    <div>
+                        <img src="assets/icon-scissors.svg" alt="scissors" id="housePickedImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="rules-btn">RULES</button>
+
+    </div>
+
+    <script>
+        var dialog = document.querySelector('dialog');
+        var btn = document.querySelector('.rules-btn');
+        var close = document.querySelector('.close');
+        btn.addEventListener('click', function () {
+            dialog.showModal();
+        });
+
+
+        close.addEventListener('click', function () {
+            dialog.close();
+        });
+    </script>
+    <script type="module" src="index.js"></script>
+
+    <!-- Rules
+
+    You Picked
+    The House Picked
+
+    You Win
+    You Lose
+
+    Play Again -->
+</body>
+
+</html>
